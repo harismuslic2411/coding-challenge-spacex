@@ -32,10 +32,6 @@ const Launches = () => {
             {error &&  <ErrorComponent error={error} handleError={handleError}/>}
             {launchData !== null && !isLoading && <div className="launches__container">
                 <LaunchItem key={launchData.id} item={launchData} />
-                {/* Was originally mapping all launches with number of flicker images greater than 4 */}
-                {/*launchData.length > 1 && launchData.map((item) => {
-                    return item.links.flickr.original.length >= 4 && <LaunchItem key={item.id} item={item}/>
-                })*/}
             </div>}
         </Container>
     )
