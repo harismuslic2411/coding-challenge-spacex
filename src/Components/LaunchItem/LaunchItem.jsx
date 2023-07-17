@@ -39,7 +39,12 @@ const LaunchItem = ({item}) => {
     const handleRandomImageChanger = () => {
         const maxLimit = item.links.flickr.original.length - 1;
 
-        const randomNum = Math.floor(Math.random() * maxLimit);
+        let randomNum = imageNumber;
+
+        do{
+            randomNum = Math.floor(Math.random() * maxLimit);
+        }
+        while(randomNum === imageNumber);
 
         setImageNumber(randomNum);
     }
@@ -65,7 +70,7 @@ const LaunchItem = ({item}) => {
                 </div>
             </div>
             <div className="launch__images">
-                <div className={!zoomed ? "launch__image-in" : "launch__image-out"} onClick={() => handleZoom()}>
+                <div className="launch__image" onClick={() => handleZoom()}>
                     <img alt={item.id} src={item.links.flickr.original[imageNumber]} />
                 </div>
                 <div className="image__controller">
