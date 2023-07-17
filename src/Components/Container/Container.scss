@@ -8,3 +8,12 @@
 
     padding: 24px 48px
 }
+
+/* Mobile query */
+@media only screen and (max-width: 625px) and (min-width: 325px)  {
+    .app__container{
+        margin-top: 24px;
+        padding: 12px 24px;
+        width: 90%;
+    }    
+}
