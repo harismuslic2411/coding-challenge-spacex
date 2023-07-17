@@ -10,3 +10,36 @@ header{
         max-width: 240px;
     }
 }
+
+/* Mobile query */
+@media only screen and (max-width: 625px) and (min-width: 325px)  {
+    header{
+        height: 60px;
+    
+        img{
+            max-width: 180px;
+        }
+    }
+}
+
+/* Extra small query */
+@media only screen and (max-width: 324px) {
+    header{
+        height: 40px;
+    
+        img{
+            max-width: 120px;
+        }
+    }
+}
+
+/* Small header on landscape mode */
+@media (orientation: landscape) {
+    header{
+        height: 40px;
+    
+        img{
+            max-width: 120px;
+        }
+    }
+}

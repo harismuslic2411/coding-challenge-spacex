@@ -14,6 +14,21 @@
     .app__container{
         margin-top: 24px;
         padding: 12px 24px;
-        width: 90%;
+        max-width: 100%;
+    }    
+}
+
+/* Extra small query */
+@media only screen and (max-width: 324px) {
+    .app__container{
+        margin-top: 12px;
+        padding: 6px 12px;
+    }    
+}
+
+/* Small top margin on landscape mode */
+@media (orientation: landscape) {
+    .app__container{
+        margin-top: 12px;
     }    
 }

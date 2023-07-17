@@ -1,10 +1,14 @@
+.launches__container{
+    width: 100%;
+}
+
 .launch__container{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 24px;
     border-radius: 12px;
     margin-bottom: 24px;
 
-    width: 650px;
+    width: 100%;
 }
 
 .launch__image{
@@ -65,11 +69,24 @@
 
 /* Mobile query */
 @media only screen and (max-width: 625px) and (min-width: 325px)  {
-    .launch__container{
-        width: 325px;
-    } 
 
     .launch__image{
-        height: 420px;
+        height: 480px;
+
+        img{
+            max-height: 480px;
+        }
+    }
+}
+
+/* Extra small query */
+@media only screen and (max-width: 324px) {
+
+    .launch__image{
+        height: 260px;
+
+        img{
+            max-height: 260px;
+        }
     }
 }
