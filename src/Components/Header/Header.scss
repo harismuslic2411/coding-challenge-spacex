@@ -34,7 +34,7 @@ header{
 }
 
 /* Small header on landscape mode */
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-width: 625px) {
     header{
         height: 40px;
     
